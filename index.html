@@ -165,15 +165,15 @@
 </head>
 
 <body class="h-full w-full">
-    <main class="sm:hidden md:hidden relative h-full w-full">
+    <main class="relative h-full w-full">
         <nav
-            class="flex bg-[#060532] justify-between items-center text-[1.2vw] border-b-8 border-[#060532] px-[3vw] py-[1vw] font-['Archivo',_sans-serif]">
+            class="flex bg-[#060532] justify-between items-center lg:text-[1.2vw] lg:p-[1vw_3vw] sm:p-[4vw] font-['Archivo',_sans-serif]">
             <div class="">
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img src="/cdn/logo.png" class="h-auto w-[10vw]" alt="">
+                    <img src="/cdn/logo.png" class="h-auto lg:w-[10vw] sm:w-[40vw]" alt="">
                 </a>
             </div>
-            <div class="flex justify-between gap-[7vw]">
+            <div class="hidden lg:flex lg:justify-between lg:gap-[7vw]">
                 <a href="#">
                     <h3 class="hover:ease-in-out text-[#ffffff] duration-300 hover:text-blue-700">Local SEO Software
                         <span><i class="ri-arrow-down-s-line"></i></span>
@@ -188,7 +188,7 @@
                                 class="ri-arrow-down-s-line"></i></span></h3>
                 </a>
             </div>
-            <div class="flex justify-between gap-[2vw]">
+            <div class="hidden lg:flex lg:justify-between lg:gap-[2vw]">
                 <a href="#">
                     <h3 class="px-[1vw] py-[.5vw] hover:ease-in-out duration-300 text-[#ffffff] hover:text-blue-700">
                         Sign In</h3>
@@ -199,9 +199,13 @@
                         Book a call</h3>
                 </a>
             </div>
+            <div class="md:hidden lg:hidden">
+                <i class="ri-arrow-down-s-line text-[10vw] font-[400] text-white"></i>
+            </div>
         </nav>
 
-        <section class="bg-[#060532] h-full w-full">
+        <!-- page-1 -->
+        <section class="sm:hidden md:hidden bg-[#060532] h-full w-full">
             <div class="flex">
                 <div class="pl-[7vw] pt-[5vw]">
                     <h2 class="text-gray-400 font-bold text-[1.5vw] leading-6 font-['Roboto',_sans-serif]">SEO SERVICES
@@ -229,8 +233,34 @@
                 <img src="/cdn/page-1Img.png" class="h-auto w-[50vw]" alt="">
             </div>
         </section>
+        <!-- page-1-mobile -->
+        <section class="md:hidden lg:hidden bg-[#060532] h-auto w-full p-[3vw_4vw]">
+            <div class="h-full w-full text-center font-['Roboto',_sans-serif]">
+                <h2 class="text-gray-400 font-[600] font-['Roboto',_sans-serif] text-[5.5vw]">SEO SERVICES
+                </h2>
+                <h1
+                    class="text-[10vw] px-[10vw] font-[700] leading-[11vw] pt-[3vw] font-['Archivo',_sans-serif] bg-gradient-to-r from-[#FD015E] via-[#B92CD0] to-[#4C87FF] inline-block text-transparent bg-clip-text">
+                    Grow your business <br>
+                    <span class="text-white font-['Archivo',_sans-serif]">with local SEO</span>
+                </h1>
+                <p class="text-white font-[500] text-[5.8vw] px-[5vw] pt-[3vw] font-['Roboto',_sans-serif]">People are
+                    searching on Google for businesses like yours right now, but you’re not showing up. Get optimized,
+                    get ranked, and turn online searchers into new customers with SEO Services from the local search
+                    experts.</p>
+                <p class="font-['Roboto',_sans-serif] text-[#9898AB] font-[600] text-[5vw] pt-[3vw]">Plans starting at
+                    $499 per month</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <h3
+                        class="px-[8vw] inline-block mt-[4vw] py-[4vw] rounded-[2.6vw] text-[5vw] text-white font-['Roboto',_sans-serif] font-semibold bg-[#0886fb] hover:ease-in-out duration-300 hover:border-blue-500 hover:bg-blue-800 hover:text-white">
+                        See plans & pricing</h3>
+                </a>
+                <img src="/cdn/page-1Img.png" class="h-auto w-[90vw] p-[4vw] mt-[5vw] mb-[9vw]" alt="">
+            </div>
+        </section>
 
-        <section class="bg-[#060532] h-full w-full">
+
+        <!-- page-2 -->
+        <section class="sm:hidden md:hidden bg-[#060532] h-full w-full">
             <div class="flex items-center gap-[3vw]">
                 <div class="flex items-center">
                     <div class="grid grid-cols-2 gap-[1vw] ml-[13vw] mt-[3vw]">
@@ -279,8 +309,41 @@
                     </a>
                 </div>
         </section>
+        <!-- page-2-mobile -->
+        <section class="md:hidden lg:hidden bg-[#060532] h-auto w-full p-[3vw_4vw]">
+            <div class="h-full w-full text-center font-['Roboto',_sans-serif]">
+                <p class="text-blue-600 font-[600] px-[1vw] text-[5vw]">Transforming businesses through local search
+                    since 2010</p>
+                <h1 class="text-[9vw] text-white font-[600] font-['Archivo',_sans-serif] leading-[9vw] mt-[3vw]">Attract
+                    more customers</h1>
+                <p class="text-[4.6vw] text-[#ADB2C7] font-[500] mt-[3vw] ">Your future customers are only a search
+                    away.</p>
+                <p class="text-[4.6vw] text-[#ADB2C7] font-[500] mt-[3vw] ">We optimize and manage your Google Business
+                    Profile and your website so you show up and stand out to local searchers, get more leads, and win
+                    new customers.</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <h3
+                        class="px-[9vw] inline-block mt-[4vw] py-[3.8vw] rounded-[2.6vw] text-[5vw] text-white font-['Roboto',_sans-serif] font-semibold bg-[#0886fb] hover:ease-in-out duration-300 hover:border-blue-500 hover:bg-blue-800 hover:text-white">
+                        See plans & pricing</h3>
+                </a>
+                <div class="grid grid-cols-1 w-full text-center mt-[6vw] gap-[4vw]">
+                    <div class="bg-white rounded-[4vw] flex flex-col bg-cover">
+                        <h2 class="text-[7vw] font-bold"><span class=""><i
+                                    class="ri-arrow-up-line text-[#00c058]"></i></span>87%</h2>
+                        <h3 class="text-center px-[22vw]">Average increase in phone calls</h3>
+                    </div>
+                    <div class="bg-white rounded-[4vw] flex flex-col bg-cover">
+                        <h2 class="text-[7vw] font-bold"><span class=""><i
+                                    class="ri-arrow-up-line text-[#00c058]"></i></span>2x</h2>
+                        <h3 class="text-center">Average increase in clicks to website</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section class="bg-[#060532] h-full w-full">
+
+
+        <section class="sm:hidden md:hidden bg-[#060532] h-full w-full">
             <div class="flex items-center justify-center gap-[3vw]">
                 <div class="mt-[3vw] text-white">
                     <h3 class="font-['Roboto',_sans-serif] text-[#adb2c7] text-[1.1vw] font-extrabold">GOOGLE BUSINESS
@@ -312,7 +375,7 @@
             </div>
         </section>
 
-        <section class="bg-[#060532] h-full w-full">
+        <section class="sm:hidden md:hidden bg-[#060532] h-full w-full">
             <div class="flex items-center justify-center gap-[3vw]">
                 <img src="/cdn/page-4Img.png" class="h-auto w-[50vw]" alt="">
                 <div class="text-white">
@@ -340,7 +403,7 @@
             </div>
         </section>
 
-        <section class="bg-[#060532] h-full w-full">
+        <section class="sm:hidden md:hidden bg-[#060532] h-full w-full">
             <div class="flex items-center justify-center gap-[2vw]">
                 <div class="mt-[3vw] text-white">
                     <h3 class="font-['Roboto',_sans-serif] text-[#adb2c7] text-[1.1vw] font-extrabold">WEBSITE
@@ -371,7 +434,7 @@
             </div>
         </section>
 
-        <section class="bg-[#060532] h-full w-full">
+        <section class="sm:hidden md:hidden bg-[#060532] h-full w-full">
             <div class="flex items-center justify-center gap-[3vw]">
                 <img src="/cdn/page-6Img.png" class="h-auto w-[50vw] " alt="">
                 <div class="text-white">
@@ -405,7 +468,7 @@
             </div>
         </section>
 
-        <section class="p-[0_10vw] h-2/3 w-full bg-[#060532] pt-[12vw]">
+        <section class="sm:hidden md:hidden p-[0_10vw] h-2/3 w-full bg-[#060532] pt-[12vw]">
             <div class="slideshow-container">
                 <!-- Card-1 -->
                 <div class="mySlides w-full h-[50vw]">
@@ -567,7 +630,7 @@
             </div> -->
         </section>
 
-        <section class="p-[4vw] mt-[35vw]">
+        <section class="sm:hidden md:hidden p-[4vw] mt-[35vw]">
             <div class="">
                 <p class="text-[#3c81f6] font-[600] text-[1.3vw] font-['Roboto',_sans-serif]">With Whitespark’s experts
                     on your side, you will save
@@ -672,7 +735,7 @@
                 </div>
         </section>
 
-        <section class="p-[4vw] mt-[5vw]">
+        <section class="sm:hidden md:hidden p-[4vw] mt-[5vw]">
             <div class="">
                 <p class="font-['Archivo',_sans-serif] font-[600] text-[3vw] ">What our clients are saying</p>
             </div>
@@ -771,7 +834,7 @@
             <i class="fas fa-circle mt-[1vw] ml-[0.5vw] text-blue-400 text-[1vw]"></i>
         </section>
 
-        <section id="seven" class="w-full h-full flex justify-center items-center">
+        <section class="sm:hidden md:hidden w-full h-full flex justify-center items-center">
             <div class=" bg-[#060532] rounded-[2vw] p-[3vw] w-[86%] h-[34vw]">
                 <p class="text-center font-['Archivo',_sans-serif] text-[3.1vw] text-white font-[600]"><span
                         class="font-['Archivo',_sans-serif] bg-gradient-to-r from-[#FD015E] via-[#B92CD0] to-[#4C87FF] inline-block text-transparent bg-clip-text">Attract
@@ -819,7 +882,7 @@
             </div>
         </section>
 
-        <section class="w-full h-auto text-center font-['Roboto',_san-serif] pt-[8vw]">
+        <section class="sm:hidden md:hidden w-full h-auto text-center font-['Roboto',_san-serif] pt-[8vw]">
 
             <div class="flex flex-col items-center">
                 <h1 class="font-['Archivo',_san-serif] text-[4vw] font-[600]">Plans & pricing</h1>
@@ -1062,7 +1125,7 @@
             </div>
         </section>
 
-        <section class="w-full h-full bg-white relative z-[99] my-[5vw]">
+        <section class="sm:hidden md:hidden w-full h-full bg-white relative z-[99] my-[5vw]">
             <img src="/cdn/world-class-bg.svg" alt="" class="absolute z-[9] top-[11%]">
             <div class="flex items-center justify-center w-full py-[10vw]">
                 <h1 class="text-[4.8vw] font-[600] font-['Archivo',_san-serif] w-[38%] leading-[5vw] relative z-[10]">
@@ -1101,7 +1164,7 @@
             </div>
         </section>
 
-        <section class="w-full h-auto bg-white font-['Roboto',_san-serif] ">
+        <section class="sm:hidden md:hidden w-full h-auto bg-white font-['Roboto',_san-serif] ">
             <div class="flex items-start justify-center gap-[3vw] w-auto mt-[15vw] mb-[14vw]">
                 <div class="w-auto">
                     <h1 class="font-['Archivo',_san-serif] text-[3.6vw] font-[600]">FAQs</h1>
@@ -1216,7 +1279,7 @@
             </div>
         </section>
 
-        <section class="w-full h-auto bg-[#060532] overflow-hidden relative">
+        <section class="sm:hidden md:hidden w-full h-auto bg-[#060532] overflow-hidden relative">
             <img src="/cdn/blue-blur.png" alt="" class="absolute z-[9] -top-[60%] left-[20%]">
             <div class="flex items-center justify-center font-['Roboto',_san-serif] relative z-[99] ">
                 <div
@@ -1242,12 +1305,13 @@
             </div>
         </section>
 
-        <footer class="bg-[#000000] w-full h-full">
+        <footer class="sm:hidden md:hidden bg-[#000000] w-full h-full">
             <div class="h-full w-full flex flex-col items-center justify-center font-['Roboto',san-serif]">
                 <div class="h-auto w-[80%] flex items-center justify-center gap-9 border-b border-slate-600">
                     <div class="w-[44%] h-auto mb-[4vw]">
                         <img src="/cdn/frame-1-foot.svg" class="h-auto w-[2vw] ml-[1.4vw]" alt="">
-                        <p class="text-[#BCBCBC] text-[1.2vw] p-[0.8vw_1.4vw]">Whitespark builds tools and provides services
+                        <p class="text-[#BCBCBC] text-[1.2vw] p-[0.8vw_1.4vw]">Whitespark builds tools and provides
+                            services
                             that help businesses and
                             agencies with local search marketing. We live and breathe local search and we’re known far
                             and
@@ -1263,9 +1327,11 @@
                     </div>
                     <div class="text-white bg-[#171717] w-[44%] h-auto p-[2vw_2vw] rounded-3xl relative">
                         <h1 class="text-[1.8vw] font-[500] font-['Archivo',san-serif]">Never miss a beat</h1>
-                        <p class="text-[#BCBCBC] text-[1.2vw] pt-[0.6vw]">Join our list and get our best local SEO research and advice in your inbox.</p>
+                        <p class="text-[#BCBCBC] text-[1.2vw] pt-[0.6vw]">Join our list and get our best local SEO
+                            research and advice in your inbox.</p>
                         <img src="/cdn/frame-2-foor.svg" alt="" class="absolute bottom-[0%] right-[0%] rounded-br-3xl">
-                        <button class="text-white text-[1.2vw] font-[500] bg-blue-500 hover:bg-blue-700 p-[0.6vw_1.2vw] mt-[1.2vw] rounded-lg">Subscribe</button>
+                        <button
+                            class="text-white text-[1.2vw] font-[500] bg-blue-500 hover:bg-blue-700 p-[0.6vw_1.2vw] mt-[1.2vw] rounded-lg">Subscribe</button>
                     </div>
                 </div>
                 <div class="flex items-start gap-[5vw] mt-[4vw]">
@@ -1327,7 +1393,8 @@
                             , Aditya Complex,<br> VIP Circle , Utran ,<br> Surat - 394101</a>
                     </div>
                 </div>
-                <div class="flex items-center justify-center gap-1 font-[500] bg-[#000000] w-full h-auto text-[#999999] text-sm mt-[2vw] py-[1vw]">
+                <div
+                    class="flex items-center justify-center gap-1 font-[500] bg-[#000000] w-full h-auto text-[#999999] text-sm mt-[2vw] py-[1vw]">
                     <h1>&copy;2024 Durvasa Infotech.</h1>
                     <h1>|</h1>
                     <h1>Terms</h1>
