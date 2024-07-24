@@ -20,6 +20,47 @@ body {
     margin: 0
 }
 
+.panelNav{
+    transform: translate();
+    transition: ease-in 1s;
+    animation: growDown 500ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+.popup:hover>i {
+    /* position: relative; */
+    transform: translate(180deg);
+    transition: 0.3s;
+}
+
+.popup:hover #popupBox1 {
+    left: 18%;
+    display: block;
+    transform: translate();
+    transition: ease-in 0.4s;
+    animation: rotateX 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+.popup:hover #popupBox2 {
+    left: 30%;
+    display: block;
+    transform: translate();
+    transition: ease-in 0.4s;
+    animation: rotateX 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+.popup:hover #popupBox3 {
+    left: 48%;
+    display: flex;
+    transform: translate();
+    transition: ease-in 0.4s;
+    animation: rotateX 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+
 .mySlides {
     display: none
 }
@@ -107,12 +148,12 @@ img {
     transition: background-color 0.3s ease;
 }
 
-.dot-tablet{
-    cursor:pointer;
+.dot-tablet {
+    cursor: pointer;
     height: 2.4vw;
     width: 2.4vw;
     margin: 1vw 0.2vw;
-    background-color: #92b7ff; 
+    background-color: #92b7ff;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.3s ease;
@@ -125,13 +166,7 @@ img {
     background-color: #397bff;
 }
 
-.active2,
-.accordion:hover {
-    background-color: #d5eeff;
-}
-
-
-.panel {
+.panell {
     display: none;
     overflow: hidden;
 }
@@ -143,5 +178,49 @@ img {
     .next,
     .text {
         font-size: 11px
+    }
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+
+    80% {
+        transform: scaleY(1.1)
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+@keyframes rotateMenu {
+    0% {
+        transform: rotateX(-90deg)
+    }
+
+    70% {
+        transform: rotateX(20deg)
+    }
+
+    100% {
+        transform: rotateX(0deg)
+    }
+}
+
+@keyframes rotateX {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+
+    50% {
+        transform: rotateX(-20deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
     }
 }
