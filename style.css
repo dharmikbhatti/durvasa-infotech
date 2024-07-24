@@ -27,11 +27,6 @@ body {
     transform-origin: top center;
 }
 
-.popup:hover>i {
-    /* position: relative; */
-    transform: translate(180deg);
-    transition: 0.3s;
-}
 
 .popup:hover #popupBox1 {
     left: 18%;
@@ -223,4 +218,52 @@ img {
         opacity: 1;
         transform: rotateX(0deg);
     }
+}
+
+
+
+
+
+/* slider-2-desktop */
+/* sliders */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    font-size: 2.5vmin;
+}
+
+.carousel-slider {
+    display: flex;
+    transition: 0.3s;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+}
+
+.carousel button {
+    margin-top: 5vw;
+}
+
+.carousel-navigation {
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.carousel-bullet {
+    width: 1em;
+    height: 1em;
+    border: none;
+    background: #a0c8ff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-bullet.is-active {
+    background: #1c69d3;
 }
